@@ -7,18 +7,16 @@
     </head>
     <body>
         <h1>$ Track yo Order $</h1>
-            <div class="order_container">
-                
-                    <div class="tracker">
-                        <ul>
-                            <li>Order No: {{tracker.order_number}}</li>
-                            
-
-                            </ul>
-                    </div>
-                  
-            </div>
-            
-        
+            <div class="order">
+                <ul class="order_ul">
+                    <li>Order No: {{tracker.order_number}}</li>
+                    <li>Order Date: {{tracker.order_date}}</li>
+                    <li>Order Time: {{tracker.order_time}}</li>
+                    <li>Estimated Delivery: {{tracker.estimated_delivery}}</li>
+                    <li>Your Order Is Here:</li>
+                    <li><img src=/static/map_location.png alt="Map Location" width="500"></li>
+                    <li><a href="/">BACK TO ORDERS</a></li>
+                </ul>                 
+            </div>      
     </body>
 </html>
