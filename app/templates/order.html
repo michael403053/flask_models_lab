@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>{ title } - My order</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Order {{index}}</h1>
+        <div class="order">
+            
+            <ul class="order_ul">
+                <li>Name: <i>{{order.customer_name}}</i></li> 
+                <li>Date: <b>{{order.order_date}}</b></li>
+                <li>Quantity: <u>{{order.quantity}}</u></li>
+                <li>Address: {{order.address}}</li>
+                
+                <li><a href="/">BACK TO ORDERS</a></li>
+
+            </ul>
+            
+                
+                    
+            
+                        
+                
+              
+            
+         
+        </div>
+
+
+        
+    </body>
+</html>

@@ -1,0 +1,53 @@
+body {
+    background-color:#325288;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    background-image: url("dollar_bill.jpg");
+    background-size: 20%;
+    
+}
+
+h1 {
+    font-family: Days One;
+    color: #325288;
+    margin: 20px;
+    background-color: #F5CEBE;
+    width: 50%;
+}
+
+p {
+    color: #F4EEE8;
+    
+}
+
+a {
+    color: #325288;
+}
+
+.address {
+    color:#F5CEBE;
+}
+
+.order {
+    background-color: #F5CEBE;
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+    
+}
+
+.order_container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+
+.order_ul {
+    list-style: none;
+    padding: 2px;
+}
+
+.order_ul > li {
+    padding:3px;
+    font-size: 20px;
+}

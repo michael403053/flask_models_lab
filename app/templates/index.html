@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>{ title } - My Orders List</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>$ My Orders List $</h1>
+        <div class="order_container">
+            {% for order in orders %}
+                <div class="order">
+                    <ul class="order_ul">
+                        <li>Name: <i>{{order.customer_name}}</i></li> 
+                        <li>Date: <b>{{order.order_date}}</b></li>
+                        <li>Quantity: <u>{{order.quantity}}</u></li>
+                        <li>Order ID: {{orders.index(order)}}</li>
+                        <li><a href="/orders/{{orders.index(order)}}">ORDER INFO</a></li>
+                        <li><a href="/trackers/{{orders.index(order)}}">TRACK YO ORDER</a></li>
+                        
+                    </ul>                
+                </div>
+            {% endfor %}
+        </div>  
+       
+    </body>
+</html>
